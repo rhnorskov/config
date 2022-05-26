@@ -4,7 +4,8 @@
     "packages/*"
   ],
   "scripts": {
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "release": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
