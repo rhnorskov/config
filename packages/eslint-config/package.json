@@ -15,6 +15,6 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "engines": {
-    "npm": ">=8.0.0"
+    "npm": ">=8.x"
   }
 }
