@@ -6,6 +6,9 @@
     "url": "https://github.com/rhnorskov/config"
   },
   "main": "index.js",
+  "scripts": {
+    "release": "npx changesets publish"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
