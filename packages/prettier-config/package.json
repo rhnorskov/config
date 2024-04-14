@@ -6,9 +6,6 @@
     "url": "https://github.com/rhnorskov/config"
   },
   "main": "index.js",
-  "scripts": {
-    "release": "npx changesets publish"
-  },
   "peerDependencies": {
     "prettier": "^2.8.0"
   }
