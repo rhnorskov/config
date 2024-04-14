@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 1.1.3
+
+### Patch Changes
+
+- 47b7589: fix: missing dependency
+
 ## 1.1.2
 
 ### Patch Changes
