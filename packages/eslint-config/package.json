@@ -5,21 +5,22 @@
     "type": "git",
     "url": "https://github.com/rhnorskov/config"
   },
+  "type": "module",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "^8",
-    "typescript": "^5"
+  "scripts": {
+    "test": "eslint . -c index.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7",
-    "@typescript-eslint/parser": "^7",
+    "@eslint/js": "^9",
+    "eslint": "^9",
     "eslint-config-prettier": "^9",
     "eslint-import-resolver-typescript": "^3",
-    "eslint-plugin-import": "^2",
-    "eslint-plugin-unused-imports": "^3"
+    "eslint-plugin-import-x": "^4",
+    "eslint-plugin-unused-imports": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "typescript": "^5"
+    "@types/eslint__js": "^8"
   }
 }
