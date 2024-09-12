@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- 9cec0f4: upgrade to eslint 9
+
 ## 1.1.3
 
 ### Patch Changes
