@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 2.1.0
+
+### Minor Changes
+
+- c2fd106: migrate to esm only packages
+
 ## 2.0.0
 
 ### Major Changes
