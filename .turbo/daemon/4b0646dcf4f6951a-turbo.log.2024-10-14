@@ -16,3 +16,13 @@
 2024-10-14T15:25:10.568392Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@rhnorskov/prettier-config"), path: AnchoredSystemPathBuf("packages/prettier-config") }}))
 2024-10-14T15:25:10.668297Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cache/9fd19e13374bfbf8-meta.json"), AnchoredSystemPathBuf(".turbo/cache/9fd19e13374bfbf8.tar.zst"), AnchoredSystemPathBuf(".turbo/cookies/6.cookie"), AnchoredSystemPathBuf("packages/eslint-config/.turbo/turbo-build.log")}
 2024-10-14T15:25:10.668312Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@rhnorskov/eslint-config"), path: AnchoredSystemPathBuf("packages/eslint-config") }}))
+2024-10-14T15:31:42.067598Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/prettier-config/package.json")}
+2024-10-14T15:31:42.067604Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rhnorskov/prettier-config"), path: AnchoredSystemPathBuf("packages/prettier-config") }}))
+2024-10-14T15:31:50.267241Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/eslint-config/package.json")}
+2024-10-14T15:31:50.267253Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rhnorskov/eslint-config"), path: AnchoredSystemPathBuf("packages/eslint-config") }}))
+2024-10-14T15:31:57.267922Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/eslint-config/package.json")}
+2024-10-14T15:31:57.267936Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rhnorskov/eslint-config"), path: AnchoredSystemPathBuf("packages/eslint-config") }}))
+2024-10-14T15:32:03.668653Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/prettier-config/package.json")}
+2024-10-14T15:32:03.668669Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rhnorskov/prettier-config"), path: AnchoredSystemPathBuf("packages/prettier-config") }}))
+2024-10-14T15:32:22.168916Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".changeset/pretty-otters-drive.md")}
+2024-10-14T15:32:22.168935Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
