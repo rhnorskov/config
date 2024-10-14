@@ -1,5 +1,11 @@
 # @rhnorskov/prettier-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 0def913: fix wrong export path
+
 ## 2.0.0
 
 ### Major Changes
