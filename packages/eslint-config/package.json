@@ -6,9 +6,14 @@
     "url": "https://github.com/rhnorskov/config"
   },
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
-    "test": "eslint . -c index.js"
+    "build": "tsup"
   },
   "dependencies": {
     "@eslint/js": "^9",
@@ -21,6 +26,7 @@
     "typescript-eslint": "^8"
   },
   "devDependencies": {
-    "@types/eslint__js": "^8"
+    "@types/eslint__js": "^8",
+    "tsup": "^8"
   }
 }

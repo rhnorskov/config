@@ -5,12 +5,21 @@
     "type": "git",
     "url": "https://github.com/rhnorskov/config"
   },
-  "main": "index.js",
-  "peerDependencies": {
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
     "prettier": "^3",
     "prettier-plugin-tailwindcss": "^0"
   },
   "devDependencies": {
-    "prettier-plugin-tailwindcss": "^0"
+    "tsup": "^8"
   }
 }

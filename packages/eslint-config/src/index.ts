@@ -1,13 +1,11 @@
-// @ts-check
-/* eslint-disable import-x/no-named-as-default-member */
-
 import eslint from "@eslint/js";
+import { Linter } from "eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginImportX from "eslint-plugin-import-x";
 import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+const config = [
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   eslintPluginImportX.flatConfigs.recommended,
@@ -58,5 +56,7 @@ export default tseslint.config(
         },
       ],
     },
-  }
-);
+  },
+] satisfies Linter.Config[];
+
+export default config;
