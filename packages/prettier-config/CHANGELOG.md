@@ -1,5 +1,11 @@
 # @rhnorskov/prettier-config
 
+## 2.0.0
+
+### Major Changes
+
+- c2fd106: migrate to esm only packages
+
 ## 1.1.2
 
 ### Patch Changes
