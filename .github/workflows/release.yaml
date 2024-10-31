@@ -15,10 +15,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          version: 8
+          bun-version: "latest"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,16 +26,17 @@ jobs:
           node-version: "lts/*"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Build
-        run: pnpm run build
+        run: bun run build
 
       - name: Publish to npmjs
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: bun run release
+          commit: "chore: release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

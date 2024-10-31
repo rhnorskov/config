@@ -25,6 +25,7 @@
     "eslint-import-resolver-typescript": "^3",
     "eslint-plugin-import-x": "^4",
     "eslint-plugin-unused-imports": "^4",
+    "globals": "^15.11.0",
     "typescript": "^5",
     "typescript-eslint": "^8"
   },

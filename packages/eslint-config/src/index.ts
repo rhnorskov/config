@@ -3,6 +3,7 @@ import { Linter } from "eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginImportX from "eslint-plugin-import-x";
 import unusedImports from "eslint-plugin-unused-imports";
+import globals from "globals";
 import tseslint from "typescript-eslint";
 
 const config = [
@@ -56,6 +57,15 @@ const config = [
         },
       ],
     },
+  },
+  {
+    files: ["**/*.cjs"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+    rules: { "@typescript-eslint/no-require-imports": "off" },
   },
 ] satisfies Linter.Config[];
 
