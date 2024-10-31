@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 2.1.2
+
+### Patch Changes
+
+- 17f9636: added support for .cjs files
+
 ## 2.1.1
 
 ### Patch Changes
