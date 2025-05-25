@@ -1,14 +1,14 @@
-import eslint from "@eslint/js";
-import { Linter } from "eslint";
+import js from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginImportX from "eslint-plugin-import-x";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-const config = [
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+export default defineConfig([
+  js.configs.recommended,
+  tseslint.configs.recommended as any,
   eslintPluginImportX.flatConfigs.recommended,
   eslintPluginImportX.flatConfigs.typescript,
   eslintConfigPrettier,
@@ -67,6 +67,4 @@ const config = [
     },
     rules: { "@typescript-eslint/no-require-imports": "off" },
   },
-] satisfies Linter.Config[];
-
-export default config;
+]);
