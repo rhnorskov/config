@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 2.1.3
+
+### Patch Changes
+
+- 751d161: fix: dts build type
+
 ## 2.1.2
 
 ### Patch Changes
