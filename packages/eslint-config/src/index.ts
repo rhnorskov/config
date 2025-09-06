@@ -1,34 +1,36 @@
 import js from "@eslint/js";
-import { defineConfig } from "eslint/config";
-import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginImportX from "eslint-plugin-import-x";
-import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import tseslint from "typescript-eslint";
+import { importX } from "eslint-plugin-import-x";
+import unusedImports from "eslint-plugin-unused-imports";
+import prettier from "eslint-config-prettier";
+import { defineConfig } from "eslint/config";
 
-export default defineConfig([
-  js.configs.recommended,
-  tseslint.configs.recommended as any,
-  eslintPluginImportX.flatConfigs.recommended,
-  eslintPluginImportX.flatConfigs.typescript,
-  eslintConfigPrettier,
+export const rhnorskov = defineConfig([
+  tseslint.configs.recommended,
+  importX.flatConfigs.recommended as any,
+  importX.flatConfigs.typescript,
+  prettier,
   {
-    plugins: {
-      "unused-imports": unusedImports,
+    files: ["**/*.{js,mjs,cjs,ts,tsx,mts,cts}"],
+    plugins: { js, "unused-imports": unusedImports },
+    extends: ["js/recommended"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
     },
-
     rules: {
       "sort-imports": [
         "warn",
         {
           ignoreCase: true,
           ignoreDeclarationSort: true,
-          ignoreMemberSort: false,
-          memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
           allowSeparatedGroups: true,
         },
       ],
-      "import-x/order": [
+      "import/order": [
         "warn",
         {
           groups: [
@@ -41,7 +43,6 @@ export default defineConfig([
           "newlines-between": "always",
           alphabetize: {
             order: "asc",
-            caseInsensitive: true,
           },
         },
       ],
@@ -58,13 +59,6 @@ export default defineConfig([
       ],
     },
   },
-  {
-    files: ["**/*.cjs"],
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
-    },
-    rules: { "@typescript-eslint/no-require-imports": "off" },
-  },
 ]);
+
+export default rhnorskov;
