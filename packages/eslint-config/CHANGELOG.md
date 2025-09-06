@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- f2234cd: Update dependencies
+
 ## 2.1.3
 
 ### Patch Changes
