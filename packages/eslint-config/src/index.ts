@@ -30,7 +30,7 @@ export const rhnorskov = defineConfig([
           allowSeparatedGroups: true,
         },
       ],
-      "import/order": [
+      "import-x/order": [
         "warn",
         {
           groups: [
