@@ -1,5 +1,11 @@
 # @rhnorskov/eslint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- a1dd1b6: fix wrong rule name
+
 ## 3.0.0
 
 ### Major Changes
